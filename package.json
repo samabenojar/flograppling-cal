@@ -1,0 +1,16 @@
+{
+  "name": "flograppling-cal",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "ics": "^3.7.6"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
