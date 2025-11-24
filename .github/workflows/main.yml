@@ -1,0 +1,52 @@
+name: Build & Publish FloGrappling ICS
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"   # every 4 hours
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      # 1) Checkout source (main)
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: main
+
+      # 2) Node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      # 3) Build
+      - name: Build ICS from source
+        working-directory: main
+        run: |
+          npm ci || npm install
+          npm start
+          mkdir -p ../out
+          [ -f FloGrappling.ics ] && mv FloGrappling.ics ../out/
+          test -f ../out/FloGrappling.ics || (echo "❌ No ICS produced" && exit 1)
+          ls -la ../out
+
+      # 4) Checkout publish branch
+      - uses: actions/checkout@v4
+        with:
+          ref: ics
+          path: ics
+
+      # 5) Publish
+      - name: Publish to ics branch
+        run: |
+          cp -f out/*.ics ics/ || true
+          cd ics
+          git config user.name "Sam Abenojar"
+          git config user.email "samuel.abenojar@genesys.com"
+          git add -A
+          git commit -m "Update FloGrappling.ics" || echo "No changes to commit"
+          git push origin ics
