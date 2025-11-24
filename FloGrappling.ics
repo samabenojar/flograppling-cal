@@ -8,10 +8,10 @@ X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14592939-2025-fpjj-gp
 SUMMARY:2025 FPJJ GP
-DTSTAMP:20251124T165103Z
+DTSTAMP:20251124T204457Z
 DTSTART:20251122T165000Z
 DESCRIPTION:https://www.flograppling.com/events/14592939-2025-fpjj-gp\n\nAc
-	curate as of Nov 24\, 11:51 AM EST
+	curate as of Nov 24\, 3:44 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -23,10 +23,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14465902-2025-bjj-stars-18
 SUMMARY:2025 BJJ Stars 18
-DTSTAMP:20251124T165103Z
+DTSTAMP:20251124T204457Z
 DTSTART:20251122T200000Z
 DESCRIPTION:https://www.flograppling.com/events/14465902-2025-bjj-stars-18\
-	n\nAccurate as of Nov 24\, 11:51 AM EST
+	n\nAccurate as of Nov 24\, 3:44 PM EST
 LOCATION:São Paulo\, São Paulo\, SP\, BR
 DURATION:PT3H
 BEGIN:VALARM
@@ -38,10 +38,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684009-2025-fight-to-win-300
 SUMMARY:2025 Fight to Win 300
-DTSTAMP:20251124T165103Z
+DTSTAMP:20251124T204457Z
 DTSTART:20251122T220000Z
 DESCRIPTION:https://www.flograppling.com/events/14684009-2025-fight-to-win-
-	300\n\nAccurate as of Nov 24\, 11:51 AM EST
+	300\n\nAccurate as of Nov 24\, 3:44 PM EST
 LOCATION:1135 Botham Jean Blvd\, Dallas\, TX\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -54,10 +54,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14569742-2025-ibjjf-the-crown-prese
 	nted-by-flograppling
 SUMMARY:2025 IBJJF The Crown Presented by Flograppling
-DTSTAMP:20251124T165103Z
+DTSTAMP:20251124T204457Z
 DTSTART:20251123T173000Z
 DESCRIPTION:https://www.flograppling.com/events/14569742-2025-ibjjf-the-cro
-	wn-presented-by-flograppling\n\nAccurate as of Nov 24\, 11:51 AM EST
+	wn-presented-by-flograppling\n\nAccurate as of Nov 24\, 3:44 PM EST
 LOCATION:Walter Pyramid\, Long Beach\, CA\, US
 DURATION:PT3H
 BEGIN:VALARM
