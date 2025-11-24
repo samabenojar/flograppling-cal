@@ -1,42 +1,31 @@
 import * as cheerio from "cheerio";
-import { setTimeout as wait } from "node:timers/promises";
+import { chromium, type Browser } from "playwright";
 
-/**
- * Event shape used by index.ts
- */
+/** Event shape consumed by index.ts */
 export interface FGEvent {
   name: string;
-  dateISO: string;     // ISO 8601 date time string
-  location: string;    // "Venue, City, Country" or "TBA"
-  url: string;         // canonical URL
+  dateISO: string;
+  location: string;
+  url: string;
 }
 
-// -------- HTTP helper (polite with headers) --------
-async function get(url: string): Promise<string> {
-  const res = await fetch(url, {
-    headers: {
-      "user-agent":
-        "Mozilla/5.0 (compatible; FloGrapplingCal/1.0; +https://github.com/samabenojar/flograppling-cal)",
-      accept: "text/html,application/xhtml+xml",
-      "accept-language": "en-US,en;q=0.9",
-    },
-  });
-  if (!res.ok) throw new Error(`GET ${url} -> ${res.status}`);
-  return await res.text();
-}
-
-// -------- JSON-LD utilities --------
+/* ---------- JSON-LD helpers ---------- */
 type Json = any;
 
-function safeParse(jsonText: string): Json | null {
-  try {
-    return JSON.parse(jsonText);
-  } catch {
-    return null;
-  }
+function parseJsonLdFrom(html: string): Json[] {
+  const $ = cheerio.load(html);
+  const blocks: Json[] = [];
+  $('script[type="application/ld+json"]').each((_, el) => {
+    const txt = $(el).contents().text().trim();
+    try {
+      const parsed = JSON.parse(txt);
+      blocks.push(parsed);
+    } catch { /* ignore */ }
+  });
+  return blocks;
 }
 
-function* walk(obj: Json): Generator<Json> {
+function* walk(obj: any): Generator<any> {
   if (obj && typeof obj === "object") {
     yield obj;
     if (Array.isArray(obj)) {
@@ -47,40 +36,17 @@ function* walk(obj: Json): Generator<Json> {
   }
 }
 
-/**
- * Extract JSON-LD blocks from an HTML string.
- */
-function extractJsonLd(html: string): Json[] {
-  const $ = cheerio.load(html);
-  const blocks: Json[] = [];
-  $('script[type="application/ld+json"]').each((_, el) => {
-    const txt = $(el).contents().text().trim();
-    const parsed = safeParse(txt);
-    if (parsed) blocks.push(parsed);
-  });
-  return blocks;
-}
-
-/**
- * From any JSON-LD blob(s), collect URLs that look like event pages.
- * Supports ItemList (list pages) and Event objects.
- */
-function discoverUrlsFromJsonLd(blobs: Json[], base = "https://www.flograppling.com"): string[] {
+function urlsFromJsonLd(blobs: Json[], base = "https://www.flograppling.com"): string[] {
   const urls = new Set<string>();
-
   for (const blob of blobs) {
     for (const node of walk(blob)) {
-      const type = (node?.["@type"] || node?.type || "").toString();
-
-      // Direct Event objects
-      if (/Event$/i.test(type) && typeof node.url === "string") {
-        try {
-          urls.add(new URL(node.url, base).toString());
-        } catch { /* ignore */ }
+      const t = (node?.["@type"] || node?.type || "").toString();
+      // Direct Event
+      if (/Event$/i.test(t) && typeof node.url === "string") {
+        try { urls.add(new URL(node.url, base).toString()); } catch {}
       }
-
-      // ItemList of events (common on index pages)
-      if (/ItemList$/i.test(type)) {
+      // ItemList (events index)
+      if (/ItemList$/i.test(t)) {
         const items = node.itemListElement ?? node.item ?? [];
         const arr = Array.isArray(items) ? items : [items];
         for (const it of arr) {
@@ -89,46 +55,30 @@ function discoverUrlsFromJsonLd(blobs: Json[], base = "https://www.flograppling.
             try {
               const u = new URL(maybe, base).toString();
               if (u.includes("/events/")) urls.add(u);
-            } catch { /* ignore */ }
+            } catch {}
           }
         }
       }
     }
   }
-
   return Array.from(urls);
 }
 
-/**
- * Parse a single Event object from JSON-LD on an event page.
- */
-function parseEventFromJsonLd(blobs: Json[], fallbackUrl: string): FGEvent | null {
+function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
   let best: any | null = null;
-
   for (const blob of blobs) {
     for (const node of walk(blob)) {
-      const type = (node?.["@type"] || node?.type || "").toString();
-      if (/Event$/i.test(type)) {
-        // Prefer nodes with startDate
-        if (node.startDate) {
-          best = node;
-          break;
-        }
+      const t = (node?.["@type"] || node?.type || "").toString();
+      if (/Event$/i.test(t) && (node.startDate || node.endDate)) {
+        best = node; break;
       }
     }
     if (best) break;
   }
-
   if (!best) return null;
 
-  const name: string =
-    (best.name ?? "").toString().trim() || "FloGrappling Event";
-
-  // Prefer startDate; fallback to endDate if needed
-  const dateISO: string =
-    (best.startDate ?? best.endDate ?? "").toString().trim();
-
-  // Location can be an object with nested fields
+  const name: string = (best.name ?? "").toString().trim() || "FloGrappling Event";
+  const dateISO: string = (best.startDate ?? best.endDate ?? "").toString().trim();
   let location = "TBA";
   const loc = best.location ?? best.locationName ?? {};
   if (typeof loc === "string") {
@@ -139,110 +89,100 @@ function parseEventFromJsonLd(blobs: Json[], fallbackUrl: string): FGEvent | nul
       loc.address?.addressLocality,
       loc.address?.addressRegion,
       loc.address?.addressCountry,
-    ]
-      .filter(Boolean)
-      .map((s: string) => s.toString().trim());
+    ].filter(Boolean).map((s: any) => String(s).trim());
     if (parts.length) location = parts.join(", ");
   }
 
   let url = best.url ?? best["@id"] ?? fallbackUrl;
-  try {
-    url = new URL(url, "https://www.flograppling.com").toString();
-  } catch {
-    url = fallbackUrl;
-  }
+  try { url = new URL(url, "https://www.flograppling.com").toString(); } catch { url = fallbackUrl; }
 
-  if (!dateISO) return null; // require a date
-
+  if (!dateISO) return null;
   return { name, dateISO, location, url };
 }
 
-// -------- Public API (used by index.ts) --------
+/* ---------- Browser helpers ---------- */
+async function withBrowser<T>(fn: (browser: Browser) => Promise<T>): Promise<T> {
+  const browser = await chromium.launch({ headless: true });
+  try { return await fn(browser); }
+  finally { await browser.close(); }
+}
 
-/**
- * Discover candidate event URLs from the events index using JSON-LD.
- * Fallback to anchors if needed.
- */
+async function getRenderedHtml(url: string): Promise<string> {
+  return withBrowser(async (browser) => {
+    const ctx = await browser.newContext({
+      userAgent:
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) FloCalBot/1.0 Chrome/122 Safari/537.36",
+    });
+    const page = await ctx.newPage();
+    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 45_000 });
+    // Give client-side JS a moment to inject JSON-LD / content
+    await page.waitForLoadState("networkidle", { timeout: 20_000 }).catch(() => {});
+    const html = await page.content();
+    await ctx.close();
+    return html;
+  });
+}
+
+/* ---------- Public API for index.ts ---------- */
+
 export async function discoverEventUrls(): Promise<string[]> {
   const base = "https://www.flograppling.com";
   const indexUrl = `${base}/events`;
-  const html = await get(indexUrl);
 
-  // 1) JSON-LD discovery (preferred)
-  const jsonld = extractJsonLd(html);
-  const fromLd = discoverUrlsFromJsonLd(jsonld, base);
+  // render the index page to let JS populate it
+  const html = await getRenderedHtml(indexUrl);
+  const blobs = parseJsonLdFrom(html);
+  let urls = urlsFromJsonLd(blobs, base);
 
-  // 2) Fallback: basic anchor discovery
-  const $ = cheerio.load(html);
-  const fromAnchors = new Set<string>();
-  $("a[href*='/events/']").each((_, a) => {
-    const href = $(a).attr("href");
-    if (!href) return;
-    try {
-      const u = new URL(href, base).toString();
-      if (u.includes("/events/")) fromAnchors.add(u);
-    } catch { /* ignore */ }
-  });
+  // Fallback: also scan visible anchors
+  if (urls.length === 0) {
+    const $ = cheerio.load(html);
+    const set = new Set<string>();
+    $("a[href*='/events/']").each((_, a) => {
+      const href = $(a).attr("href");
+      if (!href) return;
+      try {
+        const u = new URL(href, base).toString();
+        if (u.includes("/events/")) set.add(u);
+      } catch {}
+    });
+    urls = Array.from(set);
+  }
 
-  const urls = new Set<string>([...fromLd, ...fromAnchors]);
-  // Keep it sane
-  return Array.from(urls).slice(0, 40);
+  // keep it reasonable
+  return urls.slice(0, 40);
 }
 
-/**
- * Scrape a single event page by reading its JSON-LD.
- */
 export async function scrapeEvent(url: string): Promise<FGEvent | null> {
   try {
-    await wait(200); // be polite
-    const html = await get(url);
-    const blobs = extractJsonLd(html);
-    const ev = parseEventFromJsonLd(blobs, url);
-    return ev;
+    const html = await getRenderedHtml(url);
+    const blobs = parseJsonLdFrom(html);
+    return parseSingleEvent(blobs, url);
   } catch (e) {
     console.error("scrapeEvent error:", url, e);
     return null;
   }
 }
 
-/**
- * Main entry used by index.ts: find, fetch, normalize, sort, and filter.
- */
 export async function getAllEvents(): Promise<FGEvent[]> {
   const urls = await discoverEventUrls();
-
-  // If the index returns nothing (dynamic day), try a known collection page
-  // You can add more discovery URLs here if needed.
-  if (urls.length === 0) {
-    console.warn("No events found on /events; trying fallback collection pages");
-    // Example fallback(s). Add/remove as you learn their structure.
-    const fallbacks = [
-      "https://www.flograppling.com/collections", // sometimes lists upcoming
-    ];
-    for (const fb of fallbacks) {
-      try {
-        const html = await get(fb);
-        const blobs = extractJsonLd(html);
-        const more = discoverUrlsFromJsonLd(blobs, "https://www.flograppling.com");
-        more.forEach((u) => urls.push(u));
-      } catch { /* ignore */ }
-    }
-  }
-
+  console.log("Event URLs found:", urls);
   const out: FGEvent[] = [];
+
   for (const u of urls) {
+    // be a little polite
+    await new Promise((r) => setTimeout(r, 200));
     const ev = await scrapeEvent(u);
     if (ev) out.push(ev);
   }
 
-  // Normalize & filter
+  // keep upcoming & very recent (-3 days)
   const now = Date.now();
   const upcoming = out.filter((e) => {
     const t = Date.parse(e.dateISO);
-    return Number.isFinite(t) && t >= now - 3 * 24 * 3600 * 1000; // keep a 3-day tolerance
+    return Number.isFinite(t) && t >= now - 3 * 24 * 3600 * 1000;
   });
 
-  // sort ascending by start
   upcoming.sort((a, b) => Date.parse(a.dateISO) - Date.parse(b.dateISO));
   return upcoming;
 }
