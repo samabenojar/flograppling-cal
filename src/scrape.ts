@@ -125,13 +125,6 @@ function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
   return { name, dateISO, location, url };
 }
 
-  let url = best.url ?? best["@id"] ?? fallbackUrl;
-  try { url = new URL(url, "https://www.flograppling.com").toString(); } catch { url = fallbackUrl; }
-
-  if (!dateISO) return null;
-  return { name, dateISO, location, url };
-}
-
 /* ---------- Browser helpers ---------- */
 async function withBrowser<T>(fn: (browser: Browser) => Promise<T>): Promise<T> {
   const browser = await chromium.launch({ headless: true });
@@ -208,7 +201,7 @@ export async function getAllEvents(): Promise<FGEvent[]> {
     if (ev) out.push(ev);
   }
 
-    // keep a wider window: past 30d … next 365d
+  // keep a wider window: past 30d … next 365d
   const now = Date.now();
   const windowPastMs = 30 * 24 * 3600 * 1000;
   const windowFutureMs = 365 * 24 * 3600 * 1000;
@@ -222,4 +215,3 @@ export async function getAllEvents(): Promise<FGEvent[]> {
   console.log("✅ Retrieved", kept.length, "events after windowing.");
   return kept;
 }
-
