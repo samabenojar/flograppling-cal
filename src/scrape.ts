@@ -1,16 +1,28 @@
 import * as cheerio from "cheerio";
 import { chromium, type Browser } from "playwright";
 
-/** Shape consumed by index.ts */
+/** Event shape consumed by index.ts */
 export interface FGEvent {
   name: string;
-  dateISO: string;   // ISO 8601
+  dateISO: string;
   location: string;
   url: string;
 }
 
-/* ---------------- JSON-LD helpers ---------------- */
+/* ---------------- ISO Normalizer ---------------- */
+function normalizeIso(raw: string): string {
+  let s = raw.trim();
+  // Fix +HHMM or -HHMM → +HH:MM / -HH:MM
+  const noColonTZ = /([+-]\d{2})(\d{2})$/;
+  if (noColonTZ.test(s)) s = s.replace(noColonTZ, "$1:$2");
+  // Append Z if missing
+  if (!/[Zz]$/.test(s) && !/[+-]\d{2}:\d{2}$/.test(s)) s += "Z";
+  // Canonicalize +00:00 → Z
+  if (s.endsWith("+00:00")) s = s.slice(0, -6) + "Z";
+  return s;
+}
 
+/* ---------------- JSON-LD helpers ---------------- */
 type Json = any;
 
 function parseJsonLdFrom(html: string): Json[] {
@@ -18,10 +30,7 @@ function parseJsonLdFrom(html: string): Json[] {
   const blocks: Json[] = [];
   $('script[type="application/ld+json"]').each((_, el) => {
     const txt = $(el).contents().text().trim();
-    try {
-      const parsed = JSON.parse(txt);
-      blocks.push(parsed);
-    } catch { /* ignore JSON parse errors */ }
+    try { blocks.push(JSON.parse(txt)); } catch {}
   });
   return blocks;
 }
@@ -29,11 +38,8 @@ function parseJsonLdFrom(html: string): Json[] {
 function* walk(obj: any): Generator<any> {
   if (obj && typeof obj === "object") {
     yield obj;
-    if (Array.isArray(obj)) {
-      for (const it of obj) yield* walk(it);
-    } else {
-      for (const v of Object.values(obj)) yield* walk(v);
-    }
+    if (Array.isArray(obj)) for (const it of obj) yield* walk(it);
+    else for (const v of Object.values(obj)) yield* walk(v);
   }
 }
 
@@ -42,34 +48,25 @@ function urlsFromJsonLd(blobs: Json[], base = "https://www.flograppling.com"): s
   for (const blob of blobs) {
     for (const node of walk(blob)) {
       const t = (node?.["@type"] || node?.type || "").toString();
-
-      // Direct Event
-      if (/Event$/i.test(t) && typeof node.url === "string") {
+      if (/Event$/i.test(t) && typeof node.url === "string")
         try { urls.add(new URL(node.url, base).toString()); } catch {}
-      }
-
-      // ItemList (events index)
       if (/ItemList$/i.test(t)) {
         const items = node.itemListElement ?? node.item ?? [];
         const arr = Array.isArray(items) ? items : [items];
         for (const it of arr) {
           const maybe = it?.url ?? it?.item?.url ?? it?.["@id"];
-          if (typeof maybe === "string") {
+          if (typeof maybe === "string")
             try {
               const u = new URL(maybe, base).toString();
               if (u.includes("/events/")) urls.add(u);
             } catch {}
-          }
         }
       }
-
-      // Some feeds nest events as "subEvent"
       if (Array.isArray(node?.subEvent)) {
         for (const se of node.subEvent) {
           const tt = (se?.["@type"] || se?.type || "").toString();
-          if (/Event$/i.test(tt) && typeof se.url === "string") {
+          if (/Event$/i.test(tt) && typeof se.url === "string")
             try { urls.add(new URL(se.url, base).toString()); } catch {}
-          }
         }
       }
     }
@@ -78,18 +75,13 @@ function urlsFromJsonLd(blobs: Json[], base = "https://www.flograppling.com"): s
 }
 
 /* ---------------- Event parsing ---------------- */
-
 function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
-  // Prefer Event with startDate; else check subEvent
   let best: any | null = null;
 
   for (const blob of blobs) {
     for (const node of walk(blob)) {
       const t = (node?.["@type"] || node?.type || "").toString();
-
-      if (/Event$/i.test(t) && (node.startDate || node.endDate)) {
-        best = node; break;
-      }
+      if (/Event$/i.test(t) && (node.startDate || node.endDate)) { best = node; break; }
       if (Array.isArray(node?.subEvent)) {
         const se = node.subEvent.find(
           (x: any) =>
@@ -103,19 +95,14 @@ function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
   }
 
   if (!best) return null;
-
   const name: string = (best.name ?? "").toString().trim() || "FloGrappling Event";
+  const rawISO = (best.startDate ?? best.endDate ?? "").toString();
+  const dateISO = normalizeIso(rawISO);
 
-  // Normalize timezone if missing (assume UTC)
-  const rawISO = (best.startDate ?? best.endDate ?? "").toString().trim();
-  const dateISO = (/\dZ$/.test(rawISO) || /[+-]\d{2}:\d{2}$/.test(rawISO)) ? rawISO : rawISO + "Z";
-
-  // Location may be object or string
   let location = "TBA";
   const loc = best.location ?? best.locationName ?? {};
-  if (typeof loc === "string") {
-    location = loc.trim() || "TBA";
-  } else if (typeof loc === "object") {
+  if (typeof loc === "string") location = loc.trim() || "TBA";
+  else if (typeof loc === "object") {
     const parts = [
       loc.name,
       loc.address?.addressLocality,
@@ -133,7 +120,6 @@ function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
 }
 
 /* ---------------- Browser helpers ---------------- */
-
 async function withBrowser<T>(fn: (browser: Browser) => Promise<T>): Promise<T> {
   const browser = await chromium.launch({ headless: true });
   try { return await fn(browser); }
@@ -177,7 +163,7 @@ export async function discoverEventUrls(): Promise<string[]> {
     const blobs = parseJsonLdFrom(html);
     urlsFromJsonLd(blobs, base).forEach(u => urls.add(u));
 
-    // Fallback: anchors (if JSON-LD is sparse)
+    // Fallback anchors
     const $ = cheerio.load(html);
     $("a[href*='/events/']").each((_, a) => {
       const href = $(a).attr("href");
@@ -191,43 +177,31 @@ export async function discoverEventUrls(): Promise<string[]> {
 
   const list = Array.from(urls);
   console.log("Event URLs found:", list);
-  return list.slice(0, 80); // safety cap
+  return list.slice(0, 80);
 }
 
 /** Scrape one event page: JSON-LD first; fallback to DOM/script if needed. */
 export async function scrapeEvent(url: string): Promise<FGEvent | null> {
   try {
     const html = await getRenderedHtml(url);
-
-    // Try JSON-LD
     const blobs = parseJsonLdFrom(html);
     const byLd = parseSingleEvent(blobs, url);
     if (byLd) return byLd;
 
-    // Fallbacks when no JSON-LD with dates
+    // Fallback DOM parsing
     const $ = cheerio.load(html);
-
     const name =
       $('meta[property="og:title"]').attr("content")?.trim() ||
       $("h1").first().text().trim() ||
       "FloGrappling Event";
 
-    // 1) <time datetime="...">
     let dateISO = $("time[datetime]").attr("datetime")?.trim() || "";
-
-    // 2) ISO-like strings in scripts
     if (!dateISO) {
-      const scripts = $("script")
-        .map((_, s) => $(s).contents().text())
-        .get()
-        .join("\n");
-      const m = scripts.match(
-        /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})/
-      );
+      const scripts = $("script").map((_, s) => $(s).contents().text()).get().join("\n");
+      const m = scripts.match(/\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2}|[+-]\d{4})/);
       if (m) dateISO = m[0];
     }
-
-    if (dateISO && !(/[Z]|[+-]\d{2}:\d{2}$/.test(dateISO))) dateISO += "Z";
+    if (dateISO) dateISO = normalizeIso(dateISO);
 
     const location =
       $('[class*="location"], [data-testid*="location"]').first().text().trim() ||
@@ -249,7 +223,7 @@ export async function getAllEvents(): Promise<FGEvent[]> {
 
   for (const u of urls) {
     console.log("Getting details from:", u);
-    await new Promise((r) => setTimeout(r, 200)); // be polite
+    await new Promise((r) => setTimeout(r, 200));
     const ev = await scrapeEvent(u);
     if (ev) {
       console.log("✅ Parsed:", ev.name, "→", ev.dateISO);
@@ -259,7 +233,6 @@ export async function getAllEvents(): Promise<FGEvent[]> {
     }
   }
 
-  // Window: keep past 30 days to next 365 days
   const now = Date.now();
   const kept = out.filter((e) => {
     const t = Date.parse(e.dateISO);
