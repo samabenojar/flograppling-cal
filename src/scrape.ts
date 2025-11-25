@@ -176,13 +176,18 @@ export async function getAllEvents(): Promise<FGEvent[]> {
     if (ev) out.push(ev);
   }
 
-  // keep upcoming & very recent (-3 days)
+    // keep a wider window: past 30d … next 365d
   const now = Date.now();
-  const upcoming = out.filter((e) => {
+  const windowPastMs = 30 * 24 * 3600 * 1000;
+  const windowFutureMs = 365 * 24 * 3600 * 1000;
+
+  const kept = out.filter((e) => {
     const t = Date.parse(e.dateISO);
-    return Number.isFinite(t) && t >= now - 3 * 24 * 3600 * 1000;
+    return Number.isFinite(t) && t >= (now - windowPastMs) && t <= (now + windowFutureMs);
   });
 
-  upcoming.sort((a, b) => Date.parse(a.dateISO) - Date.parse(b.dateISO));
-  return upcoming;
+  kept.sort((a, b) => Date.parse(a.dateISO) - Date.parse(b.dateISO));
+  console.log("✅ Retrieved", kept.length, "events after windowing.");
+  return kept;
 }
+
