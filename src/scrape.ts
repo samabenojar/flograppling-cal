@@ -65,20 +65,45 @@ function urlsFromJsonLd(blobs: Json[], base = "https://www.flograppling.com"): s
 }
 
 function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
+  // try: Event with startDate; otherwise look into subEvent arrays
   let best: any | null = null;
+
   for (const blob of blobs) {
     for (const node of walk(blob)) {
       const t = (node?.["@type"] || node?.type || "").toString();
+
+      // Direct top-level Event
       if (/Event$/i.test(t) && (node.startDate || node.endDate)) {
-        best = node; break;
+        best = node;
+        break;
+      }
+
+      // Some pages use subEvent: [ { "@type": "Event", startDate, ...}, ... ]
+      if (node?.subEvent && Array.isArray(node.subEvent)) {
+        const withDate = node.subEvent.find(
+          (se: any) =>
+            /Event$/i.test((se?.["@type"] || se?.type || "").toString()) &&
+            (se.startDate || se.endDate)
+        );
+        if (withDate) {
+          best = withDate;
+          break;
+        }
       }
     }
     if (best) break;
   }
+
   if (!best) return null;
 
   const name: string = (best.name ?? "").toString().trim() || "FloGrappling Event";
-  const dateISO: string = (best.startDate ?? best.endDate ?? "").toString().trim();
+
+  // Normalize timezone if missing
+  const rawISO = (best.startDate ?? best.endDate ?? "").toString().trim();
+  const dateISO = (/\dZ$/.test(rawISO) || /[+-]\d{2}:\d{2}$/.test(rawISO))
+    ? rawISO
+    : rawISO + "Z"; // assume UTC when tz is omitted
+
   let location = "TBA";
   const loc = best.location ?? best.locationName ?? {};
   if (typeof loc === "string") {
@@ -92,6 +117,13 @@ function parseSingleEvent(blobs: Json[], fallbackUrl: string): FGEvent | null {
     ].filter(Boolean).map((s: any) => String(s).trim());
     if (parts.length) location = parts.join(", ");
   }
+
+  let url = best.url ?? best["@id"] ?? fallbackUrl;
+  try { url = new URL(url, "https://www.flograppling.com").toString(); } catch { url = fallbackUrl; }
+
+  if (!dateISO) return null;
+  return { name, dateISO, location, url };
+}
 
   let url = best.url ?? best["@id"] ?? fallbackUrl;
   try { url = new URL(url, "https://www.flograppling.com").toString(); } catch { url = fallbackUrl; }
