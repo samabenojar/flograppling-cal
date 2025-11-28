@@ -9,10 +9,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/13201219-2025-adcc-brazilian-nation
 	als
 SUMMARY:2025 ADCC Brazilian Nationals
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251101T120000Z
 DESCRIPTION:https://www.flograppling.com/events/13201219-2025-adcc-brazilia
-	n-nationals\n\nAccurate as of Nov 28\, 12:08 PM EST
+	n-nationals\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Indaiatuba\, SP\, BR
 DURATION:PT3H
 BEGIN:VALARM
@@ -25,10 +25,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14039857-2025-lijjn-team-series-3-s
 	eason-finale
 SUMMARY:2025 LIJJN Team Series 3 Season Finale
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251101T200000Z
 DESCRIPTION:https://www.flograppling.com/events/14039857-2025-lijjn-team-se
-	ries-3-season-finale\n\nAccurate as of Nov 28\, 12:08 PM EST
+	ries-3-season-finale\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Jersey City\, Jersey City\, NJ\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -41,10 +41,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684006-2025-fight-to-win-battle-o
 	f-the-badge
 SUMMARY:2025 Fight to Win Battle Of The Badge
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251102T002000Z
 DESCRIPTION:https://www.flograppling.com/events/14684006-2025-fight-to-win-
-	battle-of-the-badge\n\nAccurate as of Nov 28\, 12:08 PM EST
+	battle-of-the-badge\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Grand Sierra Resort and Casino\, Reno\, NV\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -56,10 +56,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14608493-2025-majestic-bjj-6
 SUMMARY:2025 Majestic BJJ #6
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251102T210000Z
 DESCRIPTION:https://www.flograppling.com/events/14608493-2025-majestic-bjj-
-	6\n\nAccurate as of Nov 28\, 12:08 PM EST
+	6\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -71,10 +71,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684015-2025-fight-to-win-299
 SUMMARY:2025 Fight to Win 299
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251109T010000Z
 DESCRIPTION:https://www.flograppling.com/events/14684015-2025-fight-to-win-
-	299\n\nAccurate as of Nov 28\, 12:08 PM EST
+	299\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -87,10 +87,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14569392-2025-elevate-submission-se
 	ries-20
 SUMMARY:2025 Elevate Submission Series 20
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251109T190000Z
 DESCRIPTION:https://www.flograppling.com/events/14569392-2025-elevate-submi
-	ssion-series-20\n\nAccurate as of Nov 28\, 12:08 PM EST
+	ssion-series-20\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -103,10 +103,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14185367-2025-adcc-orlando-openyout
 	h-trials
 SUMMARY:2025 ADCC Orlando Open/Youth Trials
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251114T130000Z
 DESCRIPTION:https://www.flograppling.com/events/14185367-2025-adcc-orlando-
-	openyouth-trials\n\nAccurate as of Nov 28\, 12:08 PM EST
+	openyouth-trials\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -119,10 +119,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/13873361-2025-adcc-east-coast-trial
 	s
 SUMMARY:2025 ADCC East Coast Trials
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251115T150000Z
 DESCRIPTION:https://www.flograppling.com/events/13873361-2025-adcc-east-coa
-	st-trials\n\nAccurate as of Nov 28\, 12:08 PM EST
+	st-trials\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Orange County Convention Center\, Orlando\, FL\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -135,10 +135,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684008-2025-agf-us-national-super
 	-fight-championship
 SUMMARY:2025 AGF US National Super Fight Championship
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251115T210000Z
 DESCRIPTION:https://www.flograppling.com/events/14684008-2025-agf-us-nation
-	al-super-fight-championship\n\nAccurate as of Nov 28\, 12:08 PM EST
+	al-super-fight-championship\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -151,10 +151,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14592824-2025-arte-suave-inland-emp
 	ire-event
 SUMMARY:2025 Arte Suave Inland Empire Event
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251116T000000Z
 DESCRIPTION:https://www.flograppling.com/events/14592824-2025-arte-suave-in
-	land-empire-event\n\nAccurate as of Nov 28\, 12:08 PM EST
+	land-empire-event\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Chino\, Chino\, CA\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -166,10 +166,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14592939-2025-fpjj-gp
 SUMMARY:2025 FPJJ GP
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251122T165000Z
 DESCRIPTION:https://www.flograppling.com/events/14592939-2025-fpjj-gp\n\nAc
-	curate as of Nov 28\, 12:08 PM EST
+	curate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -181,10 +181,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14465902-2025-bjj-stars-18
 SUMMARY:2025 BJJ Stars 18
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251122T200000Z
 DESCRIPTION:https://www.flograppling.com/events/14465902-2025-bjj-stars-18\
-	n\nAccurate as of Nov 28\, 12:08 PM EST
+	n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:São Paulo\, São Paulo\, SP\, BR
 DURATION:PT3H
 BEGIN:VALARM
@@ -196,10 +196,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684009-2025-fight-to-win-300
 SUMMARY:2025 Fight to Win 300
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251122T220000Z
 DESCRIPTION:https://www.flograppling.com/events/14684009-2025-fight-to-win-
-	300\n\nAccurate as of Nov 28\, 12:08 PM EST
+	300\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:1135 Botham Jean Blvd\, Dallas\, TX\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -212,10 +212,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14569742-2025-ibjjf-the-crown-prese
 	nted-by-flograppling
 SUMMARY:2025 IBJJF The Crown Presented by Flograppling
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251123T173000Z
 DESCRIPTION:https://www.flograppling.com/events/14569742-2025-ibjjf-the-cro
-	wn-presented-by-flograppling\n\nAccurate as of Nov 28\, 12:08 PM EST
+	wn-presented-by-flograppling\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Walter Pyramid\, Long Beach\, CA\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -227,10 +227,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684110-wno-31
 SUMMARY:WNO 31
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251206T010000Z
 DESCRIPTION:https://www.flograppling.com/events/14684110-wno-31\n\nAccurate
-	 as of Nov 28\, 12:08 PM EST
+	 as of Nov 28\, 3:59 PM EST
 LOCATION:Kalahari Resorts & Conventions - Round Rock\, Round Rock\, TX\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -242,10 +242,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14185290-2025-adcc-macae
 SUMMARY:2025 ADCC Macae
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251206T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14185290-2025-adcc-macae\n\
-	nAccurate as of Nov 28\, 12:08 PM EST
+	nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -257,10 +257,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/13912208-2025-adcc-guadalajara-open
 SUMMARY:2025 ADCC Guadalajara Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251206T150000Z
 DESCRIPTION:https://www.flograppling.com/events/13912208-2025-adcc-guadalaj
-	ara-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	ara-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -273,10 +273,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14712416-2025-finishers-seasons-bea
 	tings
 SUMMARY:2025 Finishers Seasons Beatings
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251206T210000Z
 DESCRIPTION:https://www.flograppling.com/events/14712416-2025-finishers-sea
-	sons-beatings\n\nAccurate as of Nov 28\, 12:08 PM EST
+	sons-beatings\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:10th Planet Bethlehem\, Bethlehem\, PA\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -289,10 +289,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14592829-2025-arte-suave-winter-won
 	derland-event
 SUMMARY:2025 Arte Suave Winter Wonderland Event
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251207T000000Z
 DESCRIPTION:https://www.flograppling.com/events/14592829-2025-arte-suave-wi
-	nter-wonderland-event\n\nAccurate as of Nov 28\, 12:08 PM EST
+	nter-wonderland-event\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -305,10 +305,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14541772-2025-adcc-asia-oceania-cha
 	mpionship
 SUMMARY:2025 ADCC Asia & Oceania Championship
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251207T030000Z
 DESCRIPTION:https://www.flograppling.com/events/14541772-2025-adcc-asia-oce
-	ania-championship\n\nAccurate as of Nov 28\, 12:08 PM EST
+	ania-championship\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -321,10 +321,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14478557-2025-world-ibjjf-jiu-jitsu
 	-no-gi-championship
 SUMMARY:2025 World IBJJF Jiu-Jitsu No-Gi Championship
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251211T173000Z
 DESCRIPTION:https://www.flograppling.com/events/14478557-2025-world-ibjjf-j
-	iu-jitsu-no-gi-championship\n\nAccurate as of Nov 28\, 12:08 PM EST
+	iu-jitsu-no-gi-championship\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -336,10 +336,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684014-2025-agf-pro-world-finals
 SUMMARY:2025 AGF Pro World Finals
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251212T095600Z
 DESCRIPTION:https://www.flograppling.com/events/14684014-2025-agf-pro-world
-	-finals\n\nAccurate as of Nov 28\, 12:08 PM EST
+	-finals\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -352,10 +352,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14588082-2025-adcc-south-american-c
 	hampionship
 SUMMARY:2025 ADCC South American Championship
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251213T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14588082-2025-adcc-south-am
-	erican-championship\n\nAccurate as of Nov 28\, 12:08 PM EST
+	erican-championship\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -367,10 +367,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14745570-2025-adcc-niagara-open
 SUMMARY:2025 ADCC Niagara Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251213T130000Z
 DESCRIPTION:https://www.flograppling.com/events/14745570-2025-adcc-niagara-
-	open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -382,10 +382,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14185372-2025-adcc-charlotte-open
 SUMMARY:2025 ADCC Charlotte Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20251220T130000Z
 DESCRIPTION:https://www.flograppling.com/events/14185372-2025-adcc-charlott
-	e-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	e-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Charlotte\, Charlotte\, NC\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -397,10 +397,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719907-2026-fight-to-win-301
 SUMMARY:2026 Fight to Win 301
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260109T105600Z
 DESCRIPTION:https://www.flograppling.com/events/14719907-2026-fight-to-win-
-	301\n\nAccurate as of Nov 28\, 12:08 PM EST
+	301\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -413,10 +413,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684096-2026-lijjn-brew-jitsu-wint
 	er-open
 SUMMARY:2026 LIJJN Brew Jitsu Winter Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260111T210000Z
 DESCRIPTION:https://www.flograppling.com/events/14684096-2026-lijjn-brew-ji
-	tsu-winter-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	tsu-winter-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:Bay Shore\, Bay Shore\, NY\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -428,10 +428,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719919-2026-fight-to-win-302
 SUMMARY:2026 Fight to Win 302
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260117T105600Z
 DESCRIPTION:https://www.flograppling.com/events/14719919-2026-fight-to-win-
-	302\n\nAccurate as of Nov 28\, 12:08 PM EST
+	302\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -443,10 +443,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719928-2026-fight-to-win-303
 SUMMARY:2026 Fight to Win 303
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260124T095600Z
 DESCRIPTION:https://www.flograppling.com/events/14719928-2026-fight-to-win-
-	303\n\nAccurate as of Nov 28\, 12:08 PM EST
+	303\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -458,10 +458,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14370139-2026-adcc-san-diego-open
 SUMMARY:2026 ADCC San Diego Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260124T160000Z
 DESCRIPTION:https://www.flograppling.com/events/14370139-2026-adcc-san-dieg
-	o-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	o-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -473,10 +473,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719933-2026-fight-to-win-304
 SUMMARY:2026 Fight to Win 304
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260130T095600Z
 DESCRIPTION:https://www.flograppling.com/events/14719933-2026-fight-to-win-
-	304\n\nAccurate as of Nov 28\, 12:08 PM EST
+	304\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -489,10 +489,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589924-2026-adcc-curitiba-or-para
 	na-open
 SUMMARY:2026 ADCC Curitiba or Parana Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260207T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589924-2026-adcc-curitiba
-	-or-parana-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	-or-parana-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -505,11 +505,11 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14687664-2026-adcc-european-middle-
 	east-african-trials-2nd-qualifier
 SUMMARY:2026 ADCC European\, Middle East & African Trials (2nd Qualifier)
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260214T045600Z
 DESCRIPTION:https://www.flograppling.com/events/14687664-2026-adcc-european
-	-middle-east-african-trials-2nd-qualifier\n\nAccurate as of Nov 28\, 12:08
-	 PM EST
+	-middle-east-african-trials-2nd-qualifier\n\nAccurate as of Nov 28\, 3:59 
+	PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -522,10 +522,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14591296-2026-adcc-toronto-open
 SUMMARY:2026 ADCC Toronto Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260214T140000Z
 DESCRIPTION:https://www.flograppling.com/events/14591296-2026-adcc-toronto-
-	open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -537,10 +537,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589860-2026-adcc-santiago-open
 SUMMARY:2026 ADCC Santiago Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260221T095600Z
 DESCRIPTION:https://www.flograppling.com/events/14589860-2026-adcc-santiago
-	-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -552,10 +552,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14370144-2026-adcc-portland-open
 SUMMARY:2026 ADCC Portland Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260221T160000Z
 DESCRIPTION:https://www.flograppling.com/events/14370144-2026-adcc-portland
-	-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -568,10 +568,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589911-2026-adcc-rio-de-janeiro-o
 	pen
 SUMMARY:2026 ADCC Rio de Janeiro Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260313T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589911-2026-adcc-rio-de-j
-	aneiro-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	aneiro-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -584,10 +584,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14590069-2026-adcc-south-american-t
 	rials-1
 SUMMARY:2026 ADCC South American Trials #1
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260314T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14590069-2026-adcc-south-am
-	erican-trials-1\n\nAccurate as of Nov 28\, 12:08 PM EST
+	erican-trials-1\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -600,10 +600,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589920-2026-adcc-sao-paulo-kids-t
 	rials
 SUMMARY:2026 ADCC Sao Paulo Kids Trials
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260320T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589920-2026-adcc-sao-paul
-	o-kids-trials\n\nAccurate as of Nov 28\, 12:08 PM EST
+	o-kids-trials\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -616,10 +616,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14590074-2026-adcc-south-american-t
 	rials-2
 SUMMARY:2026 ADCC South American Trials #2
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260321T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14590074-2026-adcc-south-am
-	erican-trials-2\n\nAccurate as of Nov 28\, 12:08 PM EST
+	erican-trials-2\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -631,10 +631,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589958-2026-adcc-sao-paulo-open
 SUMMARY:2026 ADCC Sao Paulo Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260322T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589958-2026-adcc-sao-paul
-	o-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	o-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -646,10 +646,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14590087-2026-adcc-mesa-open
 SUMMARY:2026 ADCC Mesa Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260328T150000Z
 DESCRIPTION:https://www.flograppling.com/events/14590087-2026-adcc-mesa-ope
-	n\n\nAccurate as of Nov 28\, 12:08 PM EST
+	n\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -661,10 +661,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14591240-2026-adcc-phoenix-open
 SUMMARY:2026 ADCC Phoenix Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260328T160000Z
 DESCRIPTION:https://www.flograppling.com/events/14591240-2026-adcc-phoenix-
-	open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -677,10 +677,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589957-2026-adcc-mar-del-plata-op
 	en
 SUMMARY:2026 ADCC Mar del Plata Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260404T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589957-2026-adcc-mar-del-
-	plata-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	plata-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -692,10 +692,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14452775-2026-adcc-las-vegas-open
 SUMMARY:2026 ADCC Las Vegas Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260418T170000Z
 DESCRIPTION:https://www.flograppling.com/events/14452775-2026-adcc-las-vega
-	s-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	s-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -707,10 +707,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589961-2026-adcc-petropolis-open
 SUMMARY:2026 ADCC Petropolis Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260530T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589961-2026-adcc-petropol
-	is-open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	is-open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -722,10 +722,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14452782-2026-adcc-atlanta-open
 SUMMARY:2026 ADCC Atlanta Open
-DTSTAMP:20251128T170810Z
+DTSTAMP:20251128T205903Z
 DTSTART:20260530T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14452782-2026-adcc-atlanta-
-	open\n\nAccurate as of Nov 28\, 12:08 PM EST
+	open\n\nAccurate as of Nov 28\, 3:59 PM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
