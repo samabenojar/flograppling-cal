@@ -8,10 +8,10 @@ X-PUBLISHED-TTL:PT1H
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15122484-2026-fight-to-win-301
 SUMMARY:2026 Fight to Win 301
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260109T095600Z
 DESCRIPTION:https://www.flograppling.com/events/15122484-2026-fight-to-win-
-	301\n\nAccurate as of Jan 19\, 9:26 PM EST
+	301\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -23,10 +23,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719907-2026-fight-to-win-301
 SUMMARY:2026 Fight to Win 301
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260109T230000Z
 DESCRIPTION:https://www.flograppling.com/events/14719907-2026-fight-to-win-
-	301\n\nAccurate as of Jan 19\, 9:26 PM EST
+	301\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -38,10 +38,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15122493-2026-battle-of-the-badge-6
 SUMMARY:2026 Battle of The Badge 6
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260110T095600Z
 DESCRIPTION:https://www.flograppling.com/events/15122493-2026-battle-of-the
-	-badge-6\n\nAccurate as of Jan 19\, 9:26 PM EST
+	-badge-6\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -53,10 +53,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15073186-2026-battle-of-the-badge-6
 SUMMARY:2026 Battle Of The Badge 6
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260110T230000Z
 DESCRIPTION:https://www.flograppling.com/events/15073186-2026-battle-of-the
-	-badge-6\n\nAccurate as of Jan 19\, 9:26 PM EST
+	-badge-6\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -69,10 +69,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14684096-2026-lijjn-brew-jitsu-wint
 	er-open
 SUMMARY:2026 LIJJN Brew Jitsu Winter Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260111T190000Z
 DESCRIPTION:https://www.flograppling.com/events/14684096-2026-lijjn-brew-ji
-	tsu-winter-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	tsu-winter-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Bay Shore\, Bay Shore\, NY\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -85,10 +85,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14995855-2026-european-jiu-jitsu-ib
 	jjf-championship
 SUMMARY:2026 European Jiu-Jitsu IBJJF Championship
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260115T093000Z
 DESCRIPTION:https://www.flograppling.com/events/14995855-2026-european-jiu-
-	jitsu-ibjjf-championship\n\nAccurate as of Jan 19\, 9:26 PM EST
+	jitsu-ibjjf-championship\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -100,10 +100,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719919-2026-fight-to-win-302
 SUMMARY:2026 Fight to Win 302
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260117T220000Z
 DESCRIPTION:https://www.flograppling.com/events/14719919-2026-fight-to-win-
-	302\n\nAccurate as of Jan 19\, 9:26 PM EST
+	302\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -116,10 +116,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15043477-2026-arte-suave-5th-annive
 	rsary-event
 SUMMARY:2026 Arte Suave 5th Anniversary Event
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260118T000000Z
 DESCRIPTION:https://www.flograppling.com/events/15043477-2026-arte-suave-5t
-	h-anniversary-event\n\nAccurate as of Jan 19\, 9:26 PM EST
+	h-anniversary-event\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Alexis Park Resort\, Las Vegas\, NV\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -131,10 +131,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719928-2026-fight-to-win-303
 SUMMARY:2026 Fight to Win 303
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260123T220000Z
 DESCRIPTION:https://www.flograppling.com/events/14719928-2026-fight-to-win-
-	303\n\nAccurate as of Jan 19\, 9:26 PM EST
+	303\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -146,10 +146,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14370139-2026-adcc-san-diego-open
 SUMMARY:2026 ADCC San Diego Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260124T160000Z
 DESCRIPTION:https://www.flograppling.com/events/14370139-2026-adcc-san-dieg
-	o-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	o-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -161,10 +161,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14719933-2026-fight-to-win-304
 SUMMARY:2026 Fight to Win 304
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260130T220000Z
 DESCRIPTION:https://www.flograppling.com/events/14719933-2026-fight-to-win-
-	304\n\nAccurate as of Jan 19\, 9:26 PM EST
+	304\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -176,10 +176,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14983185-2026-polaris-35
 SUMMARY:2026 Polaris 35
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260131T150000Z
 DESCRIPTION:https://www.flograppling.com/events/14983185-2026-polaris-35\n\
-	nAccurate as of Jan 19\, 9:26 PM EST
+	nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Ebbw Vale\, Ebbw Vale\, Wales\, GB
 DURATION:PT3H
 BEGIN:VALARM
@@ -192,10 +192,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15116420-2026-ibjjf-sul-americano-c
 	riancas
 SUMMARY:2026 IBJJF Sul-Americano Criancas
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260207T123000Z
 DESCRIPTION:https://www.flograppling.com/events/15116420-2026-ibjjf-sul-ame
-	ricano-criancas\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ricano-criancas\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -208,11 +208,11 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14687664-2026-adcc-european-middle-
 	east-african-trials-2nd-qualifier
 SUMMARY:2026 ADCC European\, Middle East & African Trials (2nd Qualifier)
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260214T090000Z
 DESCRIPTION:https://www.flograppling.com/events/14687664-2026-adcc-european
-	-middle-east-african-trials-2nd-qualifier\n\nAccurate as of Jan 19\, 9:26 
-	PM EST
+	-middle-east-african-trials-2nd-qualifier\n\nAccurate as of Jan 20\, 12:11
+	 AM EST
 LOCATION:Aleksandar Nikolić Hall\, Beograd\, RS
 DURATION:PT3H
 BEGIN:VALARM
@@ -225,10 +225,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14591296-2026-adcc-toronto-open
 SUMMARY:2026 ADCC Toronto Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260214T140000Z
 DESCRIPTION:https://www.flograppling.com/events/14591296-2026-adcc-toronto-
-	open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -240,10 +240,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14370144-2026-adcc-portland-open
 SUMMARY:2026 ADCC Portland Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260221T160000Z
 DESCRIPTION:https://www.flograppling.com/events/14370144-2026-adcc-portland
-	-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Portland Expo Center\, Portland\, OR\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -255,10 +255,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15195966-2026-finisher-apex-2
 SUMMARY:2026 Finisher Apex 2
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260222T160000Z
 DESCRIPTION:https://www.flograppling.com/events/15195966-2026-finisher-apex
-	-2\n\nAccurate as of Jan 19\, 9:26 PM EST
+	-2\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:3713 Linden St\, Bethlehem\, PA\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -271,10 +271,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15175080-2026-ibjff-absolute-grand-
 	prix
 SUMMARY:2026 IBJFF Absolute Grand Prix
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260226T095600Z
 DESCRIPTION:https://www.flograppling.com/events/15175080-2026-ibjff-absolut
-	e-grand-prix\n\nAccurate as of Jan 19\, 9:26 PM EST
+	e-grand-prix\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -287,10 +287,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15179350-2026-copa-grandes-mestres-
 	etapa-1
 SUMMARY:2026 Copa Grandes Mestres Etapa 1
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260228T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15179350-2026-copa-grandes-
-	mestres-etapa-1\n\nAccurate as of Jan 19\, 9:26 PM EST
+	mestres-etapa-1\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -303,10 +303,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123383-2026-arte-suave-valentines
 	-masacre
 SUMMARY:2026 Arte Suave Valentines Masacre
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260301T000000Z
 DESCRIPTION:https://www.flograppling.com/events/15123383-2026-arte-suave-va
-	lentines-masacre\n\nAccurate as of Jan 19\, 9:26 PM EST
+	lentines-masacre\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:California Automobile Museum\, Sacramento\, CA\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -319,10 +319,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15179355-2026-circuito-paulista-no-
 	gi-etapa-1
 SUMMARY:2026 Circuito Paulista NO GI Etapa 1
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260301T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15179355-2026-circuito-paul
-	ista-no-gi-etapa-1\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ista-no-gi-etapa-1\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -335,10 +335,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123391-2026-arte-suave-pinnacle-o
 	f-the-summit
 SUMMARY:2026 Arte Suave Pinnacle of the Summit
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260307T230000Z
 DESCRIPTION:https://www.flograppling.com/events/15123391-2026-arte-suave-pi
-	nnacle-of-the-summit\n\nAccurate as of Jan 19\, 9:26 PM EST
+	nnacle-of-the-summit\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Viridian Event Center\, West Jordan\, UT\, US
 DURATION:PT3H
 BEGIN:VALARM
@@ -350,10 +350,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15116449-2026-ibjjf-dallas-open
 SUMMARY:2026 IBJJF Dallas Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260314T085600Z
 DESCRIPTION:https://www.flograppling.com/events/15116449-2026-ibjjf-dallas-
-	open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -366,10 +366,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15179364-2026-circuito-paulista-gi-
 	etapa-1
 SUMMARY:2026 Circuito Paulista GI Etapa 1
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260314T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15179364-2026-circuito-paul
-	ista-gi-etapa-1\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ista-gi-etapa-1\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -382,10 +382,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14590069-2026-adcc-rio-de-janeiro-t
 	rials
 SUMMARY:2026 ADCC Rio de Janeiro Trials
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260314T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14590069-2026-adcc-rio-de-j
-	aneiro-trials\n\nAccurate as of Jan 19\, 9:26 PM EST
+	aneiro-trials\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Rio Olympic Velodrome\, RJ\, BR
 DURATION:PT3H
 BEGIN:VALARM
@@ -398,10 +398,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15179363-2026-circuito-paulista-gi-
 	etapa-1
 SUMMARY:2026 Circuito Paulista GI Etapa 1
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260314T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15179363-2026-circuito-paul
-	ista-gi-etapa-1\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ista-gi-etapa-1\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -414,10 +414,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589911-2026-adcc-rio-de-janeiro-o
 	pen
 SUMMARY:2026 ADCC Rio de Janeiro Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260315T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589911-2026-adcc-rio-de-j
-	aneiro-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	aneiro-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -430,10 +430,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589920-2026-adcc-sao-paulo-kids-t
 	rials
 SUMMARY:2026 ADCC Sao Paulo Kids Trials
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260320T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589920-2026-adcc-sao-paul
-	o-kids-trials\n\nAccurate as of Jan 19\, 9:26 PM EST
+	o-kids-trials\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -445,10 +445,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14590074-2026-adcc-sao-paulo-trials
 SUMMARY:2026 ADCC Sao Paulo Trials
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260321T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14590074-2026-adcc-sao-paul
-	o-trials\n\nAccurate as of Jan 19\, 9:26 PM EST
+	o-trials\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Centro Esportivo Jd. Morada do Sol Rei Pelé\, SP\, BR
 DURATION:PT3H
 BEGIN:VALARM
@@ -460,10 +460,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589958-2026-adcc-sao-paulo-open
 SUMMARY:2026 ADCC Sao Paulo Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260322T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589958-2026-adcc-sao-paul
-	o-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	o-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -476,10 +476,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123185-2026-finishers-womens-surv
 	ivor-series-2
 SUMMARY:2026 Finishers Women's Survivor Series 2
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260322T150000Z
 DESCRIPTION:https://www.flograppling.com/events/15123185-2026-finishers-wom
-	ens-survivor-series-2\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ens-survivor-series-2\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -492,10 +492,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15116511-2026-pan-jiu-jitsu-ibjjf-c
 	hampionship
 SUMMARY:2026 Pan Jiu Jitsu IBJJF Championship
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260324T085600Z
 DESCRIPTION:https://www.flograppling.com/events/15116511-2026-pan-jiu-jitsu
-	-ibjjf-championship\n\nAccurate as of Jan 19\, 9:26 PM EST
+	-ibjjf-championship\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -507,10 +507,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14590087-2026-adcc-mesa-open
 SUMMARY:2026 ADCC Mesa Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260328T150000Z
 DESCRIPTION:https://www.flograppling.com/events/14590087-2026-adcc-mesa-ope
-	n\n\nAccurate as of Jan 19\, 9:26 PM EST
+	n\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -522,10 +522,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14591240-2026-adcc-phoenix-open
 SUMMARY:2026 ADCC Phoenix Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260328T160000Z
 DESCRIPTION:https://www.flograppling.com/events/14591240-2026-adcc-phoenix-
-	open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -538,10 +538,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123788-2026-adcc-west-coast-trial
 	s
 SUMMARY:2026 ADCC West Coast Trials
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260418T045600Z
 DESCRIPTION:https://www.flograppling.com/events/15123788-2026-adcc-west-coa
-	st-trials\n\nAccurate as of Jan 19\, 9:26 PM EST
+	st-trials\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -553,10 +553,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14452775-2026-adcc-las-vegas-open
 SUMMARY:2026 ADCC Las Vegas Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260418T170000Z
 DESCRIPTION:https://www.flograppling.com/events/14452775-2026-adcc-las-vega
-	s-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	s-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -569,10 +569,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123401-2025-2026-arte-suave-10th-
 	planet-vs-the-world-2
 SUMMARY:2025-2026 Arte Suave 10th Planet vs The World 2
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260418T230000Z
 DESCRIPTION:https://www.flograppling.com/events/15123401-2025-2026-arte-sua
-	ve-10th-planet-vs-the-world-2\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ve-10th-planet-vs-the-world-2\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -585,10 +585,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15116659-2026-brasileiro-jiu-jitsu-
 	ibjjf
 SUMMARY:2026 Brasileiro Jiu-Jitsu IBJJF
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260424T085600Z
 DESCRIPTION:https://www.flograppling.com/events/15116659-2026-brasileiro-ji
-	u-jitsu-ibjjf\n\nAccurate as of Jan 19\, 9:26 PM EST
+	u-jitsu-ibjjf\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -601,10 +601,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15182969-2026-adcc-buenos-aires-ope
 	n
 SUMMARY:2026 ADCC Buenos Aires Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260425T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15182969-2026-adcc-buenos-a
-	ires-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ires-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -616,10 +616,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123196-2026-finishers-kombat-7
 SUMMARY:2026 Finishers Kombat 7
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260426T150000Z
 DESCRIPTION:https://www.flograppling.com/events/15123196-2026-finishers-kom
-	bat-7\n\nAccurate as of Jan 19\, 9:26 PM EST
+	bat-7\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -632,10 +632,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123210-2026-finishers-money-in-th
 	e-bank
 SUMMARY:2026 Finishers Money in the Bank
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260516T210000Z
 DESCRIPTION:https://www.flograppling.com/events/15123210-2026-finishers-mon
-	ey-in-the-bank\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ey-in-the-bank\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -648,10 +648,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15179372-2026-circuito-paulista-gi-
 	etapa-2
 SUMMARY:2026 Circuito Paulista GI Etapa 2
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260523T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15179372-2026-circuito-paul
-	ista-gi-etapa-2\n\nAccurate as of Jan 19\, 9:26 PM EST
+	ista-gi-etapa-2\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -663,10 +663,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589961-2026-adcc-petropolis-open
 SUMMARY:2026 ADCC Petropolis Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260530T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589961-2026-adcc-petropol
-	is-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	is-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -678,10 +678,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14452782-2026-adcc-atlanta-open
 SUMMARY:2026 ADCC Atlanta Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260530T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14452782-2026-adcc-atlanta-
-	open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -693,10 +693,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15123545-2026-ibjjf-brasileiro-kids
 SUMMARY:2026 IBJJF Brasileiro Kids
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260612T075600Z
 DESCRIPTION:https://www.flograppling.com/events/15123545-2026-ibjjf-brasile
-	iro-kids\n\nAccurate as of Jan 19\, 9:26 PM EST
+	iro-kids\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -708,10 +708,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589962-2026-adcc-venezuela-open
 SUMMARY:2026 ADCC Venezuela Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260613T130000Z
 DESCRIPTION:https://www.flograppling.com/events/14589962-2026-adcc-venezuel
-	a-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	a-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -723,10 +723,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15183018-2026-adcc-brazilia-open
 SUMMARY:2026 ADCC Brazilia Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260620T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15183018-2026-adcc-brazilia
-	-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -738,10 +738,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14452786-2026-adcc-dallas-open
 SUMMARY:2026 ADCC Dallas Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260620T130000Z
 DESCRIPTION:https://www.flograppling.com/events/14452786-2026-adcc-dallas-o
-	pen\n\nAccurate as of Jan 19\, 9:26 PM EST
+	pen\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -754,10 +754,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/15179377-2026-copa-grandes-mestres-
 	etapa-2
 SUMMARY:2026 Copa Grandes Mestres Etapa 2
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260627T120000Z
 DESCRIPTION:https://www.flograppling.com/events/15179377-2026-copa-grandes-
-	mestres-etapa-2\n\nAccurate as of Jan 19\, 9:26 PM EST
+	mestres-etapa-2\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -770,10 +770,10 @@ BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589969-2026-adcc-punta-arenas-ope
 	n
 SUMMARY:2026 ADCC Punta Arenas Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260711T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589969-2026-adcc-punta-ar
-	enas-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	enas-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:TBA
 DURATION:PT3H
 BEGIN:VALARM
@@ -785,10 +785,10 @@ END:VEVENT
 BEGIN:VEVENT
 UID:https://www.flograppling.com/events/14589963-2026-adcc-teresopolis-open
 SUMMARY:2026 ADCC Teresopolis Open
-DTSTAMP:20260120T022632Z
+DTSTAMP:20260120T051137Z
 DTSTART:20260725T120000Z
 DESCRIPTION:https://www.flograppling.com/events/14589963-2026-adcc-teresopo
-	lis-open\n\nAccurate as of Jan 19\, 9:26 PM EST
+	lis-open\n\nAccurate as of Jan 20\, 12:11 AM EST
 LOCATION:Teresópolis\, RJ\, BR
 DURATION:PT3H
 BEGIN:VALARM
