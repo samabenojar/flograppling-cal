@@ -127,21 +127,38 @@ async function withBrowser<T>(fn: (browser: Browser) => Promise<T>): Promise<T> 
 }
 
 async function getRenderedHtml(url: string): Promise<string> {
-  return withBrowser(async (browser) => {
-    const ctx = await browser.newContext({
-      userAgent:
-        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) FloCalBot/1.0 Chrome/122 Safari/537.36",
+  try {
+    return await withBrowser(async (browser) => {
+      const ctx = await browser.newContext({
+        userAgent:
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) FloCalBot/1.0 Chrome/122 Safari/537.36",
+      });
+      const page = await ctx.newPage();
+      await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60_000 });
+      await Promise.race([
+        page.waitForSelector('script[type="application/ld+json"]', { timeout: 20_000 }),
+        page.waitForLoadState("networkidle", { timeout: 20_000 }),
+      ]).catch(() => {});
+      const html = await page.content();
+      await ctx.close();
+      return html;
     });
-    const page = await ctx.newPage();
-    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 60_000 });
-    await Promise.race([
-      page.waitForSelector('script[type="application/ld+json"]', { timeout: 20_000 }),
-      page.waitForLoadState("networkidle", { timeout: 20_000 }),
-    ]).catch(() => {});
-    const html = await page.content();
-    await ctx.close();
-    return html;
-  });
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error);
+    if (!message.includes("Executable doesn't exist")) throw error;
+
+    console.warn("⚠️ Playwright browser missing; falling back to HTTP fetch.");
+    const res = await fetch(url, {
+      headers: {
+        "user-agent":
+          "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) FloCalBot/1.0 Chrome/122 Safari/537.36",
+      },
+    });
+    if (!res.ok) {
+      throw new Error(`HTTP fallback failed for ${url}: ${res.status} ${res.statusText}`);
+    }
+    return await res.text();
+  }
 }
 
 /* ---------------- Public API for index.ts ---------------- */
